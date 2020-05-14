@@ -5,7 +5,7 @@ import { HashRouter, Switch, Route } from 'react-router-dom';
 import SideNav from './Components/SideNav'
 import Dashboard from './Views/Dashboard';
 import UserTask from './Views/UserTask';
-import TimeCounter from './Components/TimerCounter';
+import TimeCounter from './Views/TimeCounter';
 import UserChart from './Views/UserChart';
 import ProjectChart from './Views/ProjectChart';
 
