@@ -1,0 +1,54 @@
+.sideNavBar{
+    width: 100%;
+   display: grid;
+   grid-template-rows: repeat(5, 1fr);
+   
+  }
+  .nav_grid1{
+    grid-row:1/2
+  }
+  .nav_grid2{
+    grid-row:2/3
+  }
+  .nav_grid3{
+    grid-row:3/4
+  }
+  .nav_grid4{
+    grid-row:4/5
+  }
+  .nav_grid5{
+    grid-row:5/6
+  }
+  .sideNav_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:rgba(0, 0, 0, 0.55);
+    
+  }
+  .sideNav_logo i{
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    
+  }
+  .sideNav_icono{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color:rgb(122, 103, 33);
+   text-decoration: none;
+  }
+  .sideNav_icono i{
+    font-size: 35px;
+    color:rgb(122, 103, 33);
+    text-decoration: none;
+  }
+  .sideNav_icono p{
+    text-decoration: none;
+    color:rgb(122, 103, 33);
+   padding: 10px;
+  }

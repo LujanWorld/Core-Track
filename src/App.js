@@ -13,20 +13,28 @@ import './App.css';
 
 function App() {
   return (
-    
-    <HashRouter>
-    
-      <Switch>
-        <Route exact path="/" component={SideNav} />
+
+    <div className='layoutGrid'>
+      <HashRouter>
+      <div className='layoutSidebar'>
+        <SideNav />
+      </div>
+        <Switch>
+        <div className='layoutview'>
+      
         <Route exact  path="/dashboard" component={Dashboard} />
         <Route exact  path="/usertask" component={UserTask} />
         <Route exact  path="/timecounter" component={TimeCounter} />
         <Route exact   path="/userchart" component={UserChart} />
         <Route exact   path="/projectchart" component={ProjectChart} />
+         </div>
+        </Switch>
+     
+    </HashRouter>
       
-      </Switch>
+    </div>
+    
    
-  </HashRouter>
     
   
   );
