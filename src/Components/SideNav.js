@@ -24,15 +24,19 @@ function SideNav() {
          <i className="fas fa-users"></i>
          </Link>
          </div>
-         <div className='sideNav_icono nav_grid4'>
+         <div className='sideNav_icono nav_grid4' style={{textDecoration: "none"}}>
          <Link to="/userchart">
-         <i className="fas fa-chart-pie"></i><p>USUARIO</p>
+         <i className="fas fa-chart-pie"></i>
          </Link>
+         <p >USUARIO</p>
+        
          </div>
          <div className='sideNav_icono nav_grid5'>
          <Link to="/projectchart">
-         <i className="fas fa-chart-pie"></i><p>PROYECTO</p>
+         <i className="fas fa-chart-pie"></i>
          </Link>
+         <p>PROYECTO</p>
+         
          </div>
       </div>
    
