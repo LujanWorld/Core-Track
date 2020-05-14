@@ -25,12 +25,13 @@
     align-items: center;
     justify-content: center;
     color:rgba(0, 0, 0, 0.55);
-    
+    text-decoration: none;
   }
   .sideNav_logo i{
     font-size: 30px;
     color:rgba(0, 0, 0, 0.55);
     padding: 10px;
+    
   }
   .sideNav_icono{
     display: flex;
@@ -38,6 +39,7 @@
    align-items: center;
    justify-content: center;
    color:rgb(122, 103, 33);
+   text-decoration: none;
   }
   .sideNav_icono i{
     font-size: 35px;
