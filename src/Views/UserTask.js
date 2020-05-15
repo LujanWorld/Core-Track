@@ -1,12 +1,20 @@
-import React from 'react';
+import React from "react";
+import items from "./items";
 
+export default function UserTask(props) {
+  console.log(items);
 
-function UserTask() {
+  items.forEach((element) => console.log(element));
+
   return (
-    <div className="view_container">
-     user task
-    </div>
+    <ul>
+      {items.map((item) => (
+        <li key={item.name}>
+          <div>{item.name}</div>
+          <div>{item.id.firstname}</div>
+          <div>{item.lastname}</div>
+        </li>
+      ))}
+    </ul>
   );
 }
-
-export default UserTask;
