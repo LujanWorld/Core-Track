@@ -48,7 +48,15 @@ export default function UserTask(props) {
                         : "nobody"}
                     </td>
                     <td>{statusMap[item.status]}</td>
-                    <td>TIME HERE</td>
+                    <Link to = 
+                      {{
+                        pathname:`/timecounter/${i}`,
+                        state: {
+                            task: item.name
+                        }
+                    }}>
+                     <td>TIME HERE <i className="fas fa-play "></i></td>
+                    </Link>
                   </tr>
                 ))}
               </tbody>
