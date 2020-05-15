@@ -2,8 +2,12 @@ import React from 'react';
 
 import Timer from '../Components/Timer';
 
+
 import './Styles/TimeCounter.css'
 
+const setTareaTiempo = (tiempo) => {
+  console.log(tiempo)
+}
 
 function TimeCounter() {
 
@@ -22,8 +26,9 @@ function TimeCounter() {
               
           </div>
           <div className="timeCounter_timer">
-             <Timer  />
+             <Timer eachTarea={(tiempo) => setTareaTiempo( tiempo)} />
           </div>
+         
       </div>
    
   );
