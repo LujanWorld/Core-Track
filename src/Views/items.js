@@ -2,7 +2,7 @@ export default [
   {
     id: "6",
     name: "Convertir cotizaci\u00f3n a factura",
-    description: "",
+    description: "aqui estan las tareas de cada fase",
     priority: "3",
     dateadded: "2020-02-19 11:07:09",
     startdate: "2020-02-19",
@@ -56,7 +56,7 @@ export default [
   {
     id: "8",
     name: "Tarea de capacitación",
-    description: "",
+    description: "es una tarea con mas descripción",
     priority: "3",
     dateadded: "2020-02-19 11:07:09",
     startdate: "2020-02-19",
@@ -110,7 +110,7 @@ export default [
   {
     id: "1",
     name: "Enviarle el contrato y este es demo",
-    description: "",
+    description: "Enviarle el contrato del presupuesto",
     priority: "3",
     dateadded: "2020-02-19 11:07:09",
     startdate: "2020-02-19",
