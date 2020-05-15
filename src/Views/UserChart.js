@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Chart from "../Components/Chart";
 
 import projects from "../projects.json";
-import tasks from "../tasks.json";
+import items from "../Views/items.js";
 
 const COLORS = [
   "#FBD104",
@@ -19,44 +19,40 @@ const COLORS = [
 
 
 function UserChart() {
-  const { tasksId } = useParams();
-//console.log(taskstId)
-  //SIMULACION DE REDUX
-  const currentTask = tasks.find((project) => tasks.id == tasksId);
+  const { itemsId } = useParams();
 
-  //const tasksPerProject = tasks.filter((task) => task.rel_id == projectId);
+  const currentTask = items.find((item) => items.id == itemsId);
 
   return (
-    
-    <div className="view_container">
-         <h2>User_Name: User_Name</h2>
-            <hr />
-              <table border="1">
-                <thead>
-                  <tr>
-                      <th>ID</th>
-                      <th>Description</th>
-                      <th>Time</th>
-                      <th>Percentage</th>
-                      <th>Color</th>
-                   </tr>
-                </thead>
-                  <tbody>
-                    {tasks.map((task, i) => (
-                      <tr key={i} style={{background: COLORS[i % COLORS.length]}}>
-                        <td>{task.id}</td>
-                        <td>{task.description}</td>
-                        <td>{task.time}</td>
-                        <td></td>
-                        <td><span style={{background: COLORS[i % COLORS.length]}}>&nbsp;</span></td>
+        <div className="view_container">
+        
+            <h2>User_Name: User_Name</h2>
+                <hr />
+                  <table border="1">
+                    <thead>
+                      <tr>
+                          <th>ID</th>
+                          <th>Description</th>
+                          <th>Time</th>
+                          <th>Percentage</th>
+                          <th>Color</th>
                       </tr>
-                    ))}
-                  </tbody>
-              </table>
-            <hr />
-                <Chart data={tasks} colors={COLORS} />
-     
-      </div>
+                    </thead>
+                      <tbody>
+                        {items.map((item, i) => (
+                          <tr key={i} >
+                            <td>{item.id}</td>
+                            <td>{item.description}</td>
+                            <td></td>
+                            <td><span >&nbsp;</span></td>
+                          </tr>
+                        ))}
+                      </tbody>
+                  </table>
+                <hr />
+                    <Chart data={items} colors={COLORS} />
+        
+          </div>
       
   );
 }
