@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from "react-router-dom";
 
 import Chart from "../Components/Chart";
+import './Styles/UserChart.css';
 
 import projects from "../projects.json";
 import tasks from "../tasks.json";
@@ -29,9 +30,17 @@ function UserChart() {
   return (
     
     <div className="view_container">
-         <h2>User_Name: User_Name</h2>
-            <hr />
-              <table border="1">
+
+<div className="timeCounter_header">
+              <h1>PROJECT_NAME</h1>
+              <h2>User_Name: User_Name</h2>
+              <h3>USER_NAME's TASK</h3>
+          </div>
+          <div className="chart_area">
+            <div className="projectChart_body">
+                    
+            
+              <table  className="chart_table" >
                 <thead>
                   <tr>
                       <th>ID</th>
@@ -53,10 +62,16 @@ function UserChart() {
                     ))}
                   </tbody>
               </table>
-            <hr />
-                <Chart data={tasks} colors={COLORS} />
+           
+              
+                    
+            </div>
+            <div className="projectChart_chart">    <Chart data={tasks} colors={COLORS} /></div>
+         </div>
+
+        
      
-      </div>
+       </div>
       
   );
 }
