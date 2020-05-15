@@ -8,7 +8,7 @@ const customPercentageLabel = ({ percent }) => {
 
 const Chart = ({ data, colors }) => {
   return (
-    <PieChart width={600} height={600}>
+    <PieChart width={500} height={500}>
       <Pie data={data} dataKey={"time"} label={customPercentageLabel}>
         {data.map((entry, index) => (
           <Cell key={index} fill={colors[index % colors.length]} />
