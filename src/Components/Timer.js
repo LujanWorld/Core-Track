@@ -17,7 +17,7 @@ function Timer(props) {
 useEffect(() => {
   if(isAlertActive){
    setAlertTimeout( setInterval(() => {
-    toast.success('Tiempo de tarea ¡ ACTIVO !', {
+    toast.success('Tiempo de tarea ¡ACTIVO!', {
     position: "top-center",
     autoClose: false,
     hideProgressBar: false,
@@ -27,7 +27,7 @@ useEffect(() => {
     progress: 1.5,
     className: "toasty",
     })
-    ;}, 1200000))
+    ;}, 120000))
    
   }
   else {
