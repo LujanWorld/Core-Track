@@ -22,7 +22,7 @@ body {
 
 .view_container {
   grid-column: 2/3;
-  /* width:100% ; */
+
   height: 92vh;
   background-color: white;
   border: none;
@@ -32,4 +32,13 @@ body {
 
 .list {
   font-weight: bold;
+  grid-column: 1/3;
+}
+.user {
+  text-align: center;
+  grid-column: 2/3;
+}
+.status {
+  text-align: right;
+  padding-left: 5px;
 }
