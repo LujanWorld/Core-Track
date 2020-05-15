@@ -32,7 +32,7 @@ function SideNav() {
         
          </div>
          <div className='sideNav_icono nav_grid5'>
-         <Link to="/projectchart">
+         <Link to={`/projectchart/5`}>
          <i className="fas fa-chart-pie"></i>
          </Link>
          <p>PROYECTO</p>
