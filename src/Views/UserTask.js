@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import items from "./items";
 
 import projects from "./projects";
@@ -21,7 +22,9 @@ export default function UserTask(props) {
       <div className="timeCounter_body">
         {projects.map((proj) => (
           <div className="userTask_tables" key={proj.id}>
-            <h2>{proj.name}</h2>
+            <Link to={`/projectchart/${proj.id}`}>
+              <h2>{proj.name}</h2>
+              </Link>
             <table>
               <thead>
                 <tr>
@@ -45,7 +48,15 @@ export default function UserTask(props) {
                         : "nobody"}
                     </td>
                     <td>{statusMap[item.status]}</td>
-                    <td>TIME HERE</td>
+                    <Link to = 
+                      {{
+                        pathname:`/timecounter/${i}`,
+                        state: {
+                            task: item.name
+                        }
+                    }}>
+                     <td>TIME HERE <i className="fas fa-play "></i></td>
+                    </Link>
                   </tr>
                 ))}
               </tbody>

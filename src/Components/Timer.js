@@ -35,6 +35,9 @@ useEffect(() => {
    
   }
 }, [isAlertActive])
+
+
+
  const start = () => {
    run();
    setStatus(1);
