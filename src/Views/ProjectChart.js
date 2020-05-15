@@ -10,7 +10,6 @@ const COLORS = [
   "red",
   "green",
   "blue",
-  "black",
   "gray",
   "purple",
   "orange",
@@ -28,10 +27,9 @@ console.log(projectId)
   const tasksPerProject = tasks.filter((task) => task.rel_id == projectId);
 
   return (
-    <>
+    
     <div className="view_container">
-     project chart
-    </div>
+    
     <h2>Project name: {currentProject.title}</h2>
       <hr />
       <table border="1">
@@ -58,7 +56,9 @@ console.log(projectId)
       </table>
       <hr />
       <Chart data={tasksPerProject} colors={COLORS} />
-      </>
+     
+      </div>
+      
   );
 }
 
