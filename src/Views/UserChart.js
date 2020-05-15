@@ -29,19 +29,18 @@ function UserChart() {
   return (
     
     <div className="view_container">
-    
-              <h2>User_Name: User_Name</h2>
-                <hr />
-                <table border="1">
-                  <thead>
-                    <tr>
+         <h2>User_Name: User_Name</h2>
+            <hr />
+              <table border="1">
+                <thead>
+                  <tr>
                       <th>ID</th>
                       <th>Description</th>
                       <th>Time</th>
                       <th>Percentage</th>
                       <th>Color</th>
-                    </tr>
-                  </thead>
+                   </tr>
+                </thead>
                   <tbody>
                     {tasks.map((task, i) => (
                       <tr key={i} style={{background: COLORS[i % COLORS.length]}}>
@@ -53,8 +52,8 @@ function UserChart() {
                       </tr>
                     ))}
                   </tbody>
-                </table>
-                <hr />
+              </table>
+            <hr />
                 <Chart data={tasks} colors={COLORS} />
      
       </div>
