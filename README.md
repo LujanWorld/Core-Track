@@ -1,5 +1,7 @@
 # Core-Track
+
 Project for the challenge in 4040Apps
+
 ## Índice
 
 - [Introducción](#introducción)
@@ -15,7 +17,7 @@ Project for the challenge in 4040Apps
 
 ## Introducción
 
-Core Track es una aplicación web que permite traquear el tiempo por proyectos y tareas de forma automática y mostrando los resultados filtrados y clasificados según el usuario. Cuenta con dos interfaces, la primera para el personal de Recursos Humanos y la segunda para los usuarios de la empresa.
+Core Track es una aplicación web que permite traquear el tiempo por proyectos y tareas de forma automática y mostrando los resultados graficados y clasificados según el usuario. Cuenta con dos interfaces, la primera para los usuarios de la empresa y la segunda para el personal de Recursos Humanos. Hemos trabajado con React, por su rapidez y efectividad de usabilidad, tambien destacamos que todos los diseños son propios para desarrollar la creatividad y aportarle mas valor al proyecto.
 
 ---
 
@@ -92,7 +94,7 @@ Se requiere enviar alertas en periodos de inactividad o en conexion a redes soci
 ## Prototipo de Baja Fidelidad
 
 - Prototipo de Baja Fidelidad
-  ![alt Prototipo en papel](src/Propaper.png)
+  ![alt Prototipo en papel](Propaper.png)
 
 ---
 
@@ -100,10 +102,10 @@ Se requiere enviar alertas en periodos de inactividad o en conexion a redes soci
 
 - [Prototipo de Alta Fidelidad](https://www.figma.com/file/SfXXoSduMoM1dw51nbj0kC/TIME-TRACKER-4040APPS?node-id=0%3A1)
 
-  ![alt Prototipo digital](src/DigitalPro.png)
+  ![alt Prototipo digital](DigitalProt.png)
 
-- Paleta de colores
-  ![alt Paleta de colores](src/Colors.png)
+- Proyecto terminado
+  ![alt Proyecto terminado](ProjectDone.png)
 
 ---
 
@@ -120,7 +122,7 @@ Se requiere enviar alertas en periodos de inactividad o en conexion a redes soci
 ## Herramientas utilizadas
 
 - Prototipos: [Figma](https://www.figma.com/).
-- Base de datos:API cubos
+- Base de datos:API cubos.
 - Framework: [React](https://es.reactjs.org).
 - Organización: [Trello](https://trello.com/b/wGM6lGbq/talent-fest).
 
@@ -132,5 +134,3 @@ Se requiere enviar alertas en periodos de inactividad o en conexion a redes soci
 - Josseline Acosta [LinkedIn](https://www.linkedin.com/in/jossacosta/)
 - Mirey Morales [LinkedIn](https://www.linkedin.com/in/mirey-morales/)
 - Maria Lujan Navarro [LinkedIn](https://www.linkedin.com/in/lujan-navarro/)
-
-hola

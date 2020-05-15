@@ -7,7 +7,7 @@ body {
 }
 .layoutGrid {
   display: grid;
-  grid-template-columns: 7% 93%;
+  grid-template-columns: 20% 80%;
 }
 .layoutSidebar {
   grid-column: 1/2;

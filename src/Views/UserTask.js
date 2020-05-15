@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 import items from "./items";
 
@@ -24,7 +25,7 @@ export default function UserTask(props) {
           <div className="userTask_tables" key={proj.id}>
             <Link to={`/projectchart/${proj.id}`}>
               <h2>{proj.name}</h2>
-              </Link>
+            </Link>
             <table>
               <thead>
                 <tr>
@@ -47,18 +48,23 @@ export default function UserTask(props) {
                         ? item.assignees[0].full_name
                         : "nobody"}
                     </td>
-                    <td >{statusMap[item.status]}</td>
-                    <Link to = 
-                      {{
-                        pathname:`/timecounter/${i}`,
-                        state: {
+                    <td>{statusMap[item.status]}</td>
+                    <td>
+                      <Link
+                        to={{
+                          pathname: `/timecounter/${i}`,
+                          state: {
                             taskName: item.name,
                             project: proj.name,
-                            user:item.assignees,
-                        }
-                    }}>
-                     <td className="userTask_play">Iniciar Tarea<i className="fas fa-play start"></i></td>
-                    </Link>
+                            user: item.assignees,
+                          },
+                        }}
+                      >
+                        <td className="userTask_play">
+                          Iniciar Tarea<i className="fas fa-play start"></i>
+                        </td>
+                      </Link>
+                    </td>
                   </tr>
                 ))}
               </tbody>
