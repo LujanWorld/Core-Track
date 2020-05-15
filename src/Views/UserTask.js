@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import items from "./items";
 import { Link } from 'react-router-dom';
 import projects from "./projects";
@@ -21,7 +22,9 @@ export default function UserTask(props) {
       <div className="timeCounter_body">
         {projects.map((proj) => (
           <div className="userTask_tables" key={proj.id}>
-            <h2>{proj.name}</h2>
+            <Link to={`/projectchart/${proj.id}`}>
+              <h2>{proj.name}</h2>
+              </Link>
             <table>
               <thead>
                 <tr>

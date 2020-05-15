@@ -50,6 +50,8 @@ export default [
     timesheets: [],
     checklist_items: [],
     milestone_name: "",
+    // campo simulado
+    time: 400
   },
   {
     id: "8",
@@ -102,6 +104,8 @@ export default [
     timesheets: [],
     checklist_items: [],
     milestone_name: "",
+    // campo simulado
+    time: 60
   },
   {
     id: "1",
@@ -154,6 +158,8 @@ export default [
     timesheets: [],
     checklist_items: [],
     milestone_name: "",
+    // campo simulado
+    time: 80
   },
   {
     "id": "9",
@@ -282,7 +288,9 @@ export default [
             "registration_confirmed": "1",
             "addedfrom": "3"
         }
-    }
+    },
+    // campo simulado
+    time: 80
 }
 ,
 {
@@ -400,7 +408,9 @@ export default [
             "registration_confirmed": "1",
             "addedfrom": "3"
         }
-    }
+    },
+    // campo simulado
+    time: 80
 },
 {
     "id": "11",
@@ -529,6 +539,8 @@ export default [
             "registration_confirmed": "1",
             "addedfrom": "3"
         }
-    }
+    },
+    // campo simulado
+    time: 80
 }
 ];
