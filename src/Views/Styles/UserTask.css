@@ -1,0 +1,13 @@
+.userTask_tables table {
+  width: 100%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.userTask_tables table > thead > tr {
+  text-align: left;
+}
+
+.userTask_tables h2 {
+  padding-bottom: 1em;
+}
