@@ -5,7 +5,7 @@ import Chart from "../Components/Chart";
 import './Styles/UserChart.css';
 
 import projects from "../projects.json";
-import tasks from "../tasks.json";
+import items from "../Views/items.js";
 
 const COLORS = [
   "#FBD104",
@@ -13,19 +13,13 @@ const COLORS = [
   "#92851A",
   "#A3DDFF",
   "#1326AE",
-  "orange",
-  "cyan",
-  "magenta",
 ];
 
 
 function UserChart() {
-  const { tasksId } = useParams();
-//console.log(taskstId)
-  //SIMULACION DE REDUX
-  const currentTask = tasks.find((project) => tasks.id == tasksId);
+  const { itemsId } = useParams();
 
-  //const tasksPerProject = tasks.filter((task) => task.rel_id == projectId);
+  const currentTask = items.find((item) => items.id == itemsId);
 
   return (
     
