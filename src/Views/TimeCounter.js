@@ -1,15 +1,22 @@
 import React from 'react';
 
 import Timer from '../Components/Timer';
-
+import items from "./items";
 
 import './Styles/TimeCounter.css'
 
-const setTareaTiempo = (tiempo) => {
-  console.log(tiempo)
+const setTareaTiempo = (tiempo, task) => {
+  let tiempoPorTareaArray = [tiempo.h, tiempo.m, tiempo.s];
+  const tiempoPorTarea = tiempoPorTareaArray.join(':');
+  let task1= 'tarea1'
+  console.log(tiempoPorTarea);
+  localStorage.setItem(task1, tiempoPorTarea);
+  return tiempoPorTarea;
 }
 
+
 function TimeCounter() {
+
 
   return (
       <div className="view_container">
@@ -20,13 +27,13 @@ function TimeCounter() {
           <div className="timeCounter_body">
               <h3>Tarea</h3>
               <div className="timeCounter_body_description">
-                <h4>-Descripcion de la tarea_</h4>
+               
               </div>
               
               
           </div>
           <div className="timeCounter_timer">
-             <Timer eachTarea={(tiempo) => setTareaTiempo( tiempo)} />
+             <Timer eachTarea={(tiempo, task) => setTareaTiempo( tiempo, task)} />
           </div>
          
       </div>

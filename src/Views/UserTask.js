@@ -7,6 +7,7 @@ export default function UserTask(props) {
   items.forEach((element) => console.log(element));
 
   return (
+    <div className="view_container">
     <ul>
       {items.map((item) => (
         <li key={item.name}>
@@ -16,5 +17,6 @@ export default function UserTask(props) {
         </li>
       ))}
     </ul>
+    </div>
   );
 }
