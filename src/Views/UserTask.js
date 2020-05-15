@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import items from "./items";
-import { Link } from 'react-router-dom';
+
 import projects from "./projects";
 
 import "./Styles/UserTask.css";
