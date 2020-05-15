@@ -11,3 +11,12 @@
 .userTask_tables h2 {
   padding-bottom: 1em;
 }
+
+.start  {
+  border:1px solid rgba(91, 211, 129, 0.891);
+  color:rgba(91, 211, 129, 0.891);
+}
+
+.userTask_play td{
+  text-decoration: none;
+}

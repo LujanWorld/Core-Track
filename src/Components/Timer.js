@@ -44,7 +44,7 @@ useEffect(() => {
    setInterv(setInterval(run, 10));
    console.log('Date Task Start:',Date.now())
    setIsAlertActive(true);
-    
+    //DateNow()
    
  };
 
@@ -76,11 +76,11 @@ useEffect(() => {
     console.log('Date Task pause:',Date.now())
   };
 
-  const { eachTarea } = props;
+  const { eachTaskName } = props;
 
   const saveTime = t => {
     console.log(t);
-    eachTarea(t);
+    eachTaskName(t);
     console.log('Date Task End up:',Date.now())
   }
   
@@ -91,7 +91,10 @@ useEffect(() => {
     setIsAlertActive(false);
     console.log(isAlertActive);
     setStatus(0);
-    setTime({ms:0, s:0, m:0, h:0})
+    //end_time = Date.now
+    // props.onDone({end_time:'', start_time:'', time_spent:''})
+    // setTime({ms:0, s:0, m:0, h:0})
+    
   };
   
   

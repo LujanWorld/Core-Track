@@ -47,15 +47,17 @@ export default function UserTask(props) {
                         ? item.assignees[0].full_name
                         : "nobody"}
                     </td>
-                    <td>{statusMap[item.status]}</td>
+                    <td >{statusMap[item.status]}</td>
                     <Link to = 
                       {{
                         pathname:`/timecounter/${i}`,
                         state: {
-                            task: item.name
+                            taskName: item.name,
+                            project: proj.name,
+                            user:item.assignees,
                         }
                     }}>
-                     <td>TIME HERE <i className="fas fa-play "></i></td>
+                     <td className="userTask_play">Iniciar Tarea<i className="fas fa-play start"></i></td>
                     </Link>
                   </tr>
                 ))}
