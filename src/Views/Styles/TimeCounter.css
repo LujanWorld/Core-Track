@@ -66,15 +66,34 @@
 
 
   @media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
+and (min-device-width: 250px) 
+and (max-device-width: 900px) 
 and (orientation: portrait) 
 and (-webkit-min-device-pixel-ratio: 1) {
+    .timeCounter_header{
+      display: none;
+    }
+    .timeCounter_timer{
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      border-bottom:  1px solid rgba(196, 196, 196, .6);
+    }
+    .stopwatch{
+      font-size: 30px;
+      
+    }
     
-}
-@media only screen 
-and (max-device-width: 320px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 1) {
-    
+  .btns_container button{
+    background-color: white;
+    font-size: 20px;
+    display: inline-block;
+    width:50px;
+    padding: 10px 10px;
+    margin-left: 5px;
+       
+       line-height: 15px;
+       text-align: center;
+       letter-spacing: 1px;
+   }
 }
