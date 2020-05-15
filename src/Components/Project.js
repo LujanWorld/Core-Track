@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import { useParams } from "react-router-dom";
 
-import Chart from "../Components/Chart";
+import Chart from "./Chart";
 
 import projects from "../projects.json";
 import tasks from "../tasks.json";
@@ -18,21 +18,16 @@ const COLORS = [
   "magenta",
 ];
 
-
-function ProjectChart() {
+const Project = () => {
   const { projectId } = useParams();
-console.log(projectId)
+
   //SIMULACION DE REDUX
   const currentProject = projects.find((project) => project.id == projectId);
-
   const tasksPerProject = tasks.filter((task) => task.rel_id == projectId);
 
   return (
     <>
-    <div className="view_container">
-     project chart
-    </div>
-    <h2>Project name: {currentProject.title}</h2>
+      <h2>Project name: {currentProject.title}</h2>
       <hr />
       <table border="1">
         <thead>
@@ -58,8 +53,8 @@ console.log(projectId)
       </table>
       <hr />
       <Chart data={tasksPerProject} colors={COLORS} />
-      </>
+    </>
   );
-}
+};
 
-export default ProjectChart;
+export default Project;

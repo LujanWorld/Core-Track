@@ -1,7 +1,9 @@
 import React from 'react';
 
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 
+//import Project from './Components/Project';
+import projects from './projects';
 import SideNav from './Components/SideNav'
 import Dashboard from './Views/Dashboard';
 import UserTask from './Views/UserTask';
@@ -16,9 +18,22 @@ function App() {
 
     <div className='layoutGrid'>
       <HashRouter>
+        
       <div className='layoutSidebar'>
         <SideNav />
       </div>
+      <div>
+      <nav className="nav-container">
+          <ul>
+            {projects.map((project, i) => (
+              <li key={i}>
+                <Link to={`/projectChart/${project.id}`}>{project.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
         <Switch>
         <div className='layoutview'>
       
@@ -26,7 +41,7 @@ function App() {
         <Route exact  path="/usertask" component={UserTask} />
         <Route exact  path="/timecounter" component={TimeCounter} />
         <Route exact   path="/userchart" component={UserChart} />
-        <Route exact   path="/projectchart" component={ProjectChart} />
+        <Route exact   path="/projectchart/:projectId" component={ProjectChart} />
          </div>
         </Switch>
      
