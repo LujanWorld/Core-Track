@@ -24,7 +24,7 @@ function App() {
           <div className="layoutview">
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/usertask" component={UserTask} />
-            <Route exact path="/timecounter" component={TimeCounter} />
+            <Route exact path="/timecounter/:i" component={TimeCounter} />
             <Route exact path="/userchart" component={UserChart} />
             <Route
               exact

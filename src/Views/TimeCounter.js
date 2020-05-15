@@ -6,6 +6,7 @@ import items from "./items";
 import './Styles/TimeCounter.css'
 
 const setTareaTiempo = (tiempo, task) => {
+  
   let tiempoPorTareaArray = [tiempo.h, tiempo.m, tiempo.s];
   const tiempoPorTarea = tiempoPorTareaArray.join(':');
   let task1= 'tarea1'
@@ -15,8 +16,9 @@ const setTareaTiempo = (tiempo, task) => {
 }
 
 
-function TimeCounter() {
+function TimeCounter(props) {
 
+  console.log(props.location.state)
 
   return (
       <div className="view_container">
