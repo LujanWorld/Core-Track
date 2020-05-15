@@ -12,9 +12,6 @@ const COLORS = [
   "#92851A",
   "#A3DDFF",
   "#1326AE",
-  "orange",
-  "cyan",
-  "magenta",
 ];
 
 
