@@ -8,7 +8,7 @@ function SideNav() {
     <div className="sideNavBar">
       <div className="sideNav_logo nav_grid1">
         <p>CORE TRACK</p>
-        <Link to="/">
+        <Link to="/dashboard">
           <i className="fas fa-user-clock"></i>
         </Link>
       </div>
