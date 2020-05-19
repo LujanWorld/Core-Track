@@ -1,92 +1,15 @@
-<<<<<<< HEAD
-
-.timeCounter_header{
-    padding: 2% 0 2% 5%;
-    border-bottom:  2px solid rgba(196, 196, 196, .6);
-  }
-  .timeCounter_header h3{
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .timeCounter_body{
-    padding: 2% 0 2% 5%;
-    border-bottom:  2px solid rgba(196, 196, 196, .6);
-    padding-top: 30px;
-  }
-  .timeCounter_body_description{
-    display: flex;
-    
-  }
-  .timeCounter_body_description h4{
-  padding: 10px 50px;
-  }
-  .timeCounter_body_description div{
-    padding: 10px 50px;
-    }
-  .timeCounter_timer{
-    padding: 5% 0 10% 5%;
-    display: flex;
-    justify-content: center;
-    border-bottom:  2px solid rgba(196, 196, 196, .6);
-  }
-  .stopwatch{
-    font-size: 70px;
-    
-  }
-  .btns_container{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  .btns_container button{
-   background-color: white;
-   font-size: 20px;
-   display: inline-block;
-   width:100px;
-   padding: 10px 20px;
-   margin-left: 10px;
-      border-radius: 5px;
-      line-height: 31px;
-      text-align: center;
-      letter-spacing: 2px;
-  }
-  
-  .btns_container   .start  {
-    border:1px solid rgba(91, 211, 129, 0.891);
-    color:rgba(91, 211, 129, 0.891);
-  }
-  .btns_container .stop{
-    border:1px solid rgba(239, 16, 65, 0.755);
-    color:rgba(239, 16, 65, 0.755);
-  }
-  .btns_container .pause{
-    border:1px solid #F3D66C;
-    color:#F3D66C;
-  }
-
-
-  @media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 1) {
-    
-}
-@media only screen 
-and (max-device-width: 320px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 1) {
-    
-}
-=======
 .timeCounter_header {
   padding: 2% 0 2% 5%;
   border-bottom: 2px solid rgba(196, 196, 196, 0.6);
 }
+.timeCounter_header h3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .timeCounter_body {
   padding: 2% 0 2% 5%;
   border-bottom: 2px solid rgba(196, 196, 196, 0.6);
+  padding-top: 30px;
 }
 .timeCounter_body_description {
   display: flex;
@@ -137,4 +60,3 @@ and (-webkit-min-device-pixel-ratio: 1) {
   border: 1px solid #f3d66c;
   color: #f3d66c;
 }
->>>>>>> Name form
