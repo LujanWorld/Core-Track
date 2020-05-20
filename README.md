@@ -114,8 +114,8 @@ Se requiere enviar alertas en periodos de inactividad o en conexion a redes soci
 - Día 1: Presentación de reto, ideación de las posibles soluciones y prototipo de baja fidelidad.
 - Día 2: Historias de usuario, elección de herramientas a utilizar y prototipo de alta fidelidad.
 - Día 3: Retroalimentación de idea propuesta, replanteamiento de herramientas y modificación de prototipo de alta fidelidad.
-- Día 4 Talent:
-- Día 5 Talent:
+- Día 4 Talent: Hacking time.
+- Día 5 Talent: Hacking time y deploy del proyecto final.
 
 ---
 
